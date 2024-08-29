@@ -4,7 +4,6 @@ import MaskGroup from './MaskGroup'
 import UserProfiles from './UserProfiles'
 import JobSeeker from './JobSeeker'
 import Employers from './Employers'
-import Footer from '../Footer'
 
 function Home() {
   return (

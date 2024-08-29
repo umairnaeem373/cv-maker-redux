@@ -1,0 +1,243 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Muhammad Umair",
+      "Email": "umairnaeem373@gmail.com",
+      "phone": "03341041181",
+      "Password": "605615",
+      "Skills": [
+        {
+          "name": "CSS",
+          "percentage": "80"
+        },
+        {
+          "name": "HTML",
+          "percentage": "90"
+        },
+        {
+          "name": "JS",
+          "percentage": "90"
+        },
+        {
+          "name": "React",
+          "percentage": "75"
+        }
+      ],
+      "summary": "I am a front-end Developer",
+      "PreferredJobCity": "Lahore",
+      "Hobbies": [
+        "books reading"
+      ]
+    },
+    {
+      "Name": "Henry",
+      "Email": "abd@gmail.com",
+      "Phone": "03044055666",
+      "Password": "605615",
+      "id": 2,
+      "basic": {
+        "firstName": "Muhammad Umair",
+        "last": "Naeem",
+        "dob": "2023-11-26",
+        "gender": "male",
+        "degree": "Inter"
+      },
+      "contact": {
+        "email": "tayyab@gmail.com",
+        "home_contact": "03117669302",
+        "mob": "3064741294",
+        "country": "Pakistan",
+        "addressLine1": "House no 528",
+        "city": "Lahore",
+        "addressLine2": "Hassan Block Nishter",
+        "degree": "54789"
+      },
+      "experience": {
+        "jobCity": "Birmingham",
+        "experience": "Fresh",
+        "expDesignation": "Web Developer"
+      },
+      "education": {
+        "degreeTitle": "BS CS",
+        "degreeLevel": "BS",
+        "majors": "CS",
+        "year": "2015",
+        "Institute": "VU",
+        "location": "Lahore",
+        "percentage": "3.4",
+        "resultType": "CGPA"
+      },
+      "username": "umairnaeem373@gmail.com",
+      "Awards": {
+        "AwardTitle": "Employee of Month",
+        "Month/Year": "November 2022",
+        "Authority": "UM",
+        "AwardURL": "no url",
+        "date": "November 2021"
+      },
+      "summary": "Hello I am a Front end Developer",
+      "WorkHistory": [
+        {
+          "JobTitle": "Developer",
+          "Company": "VCT",
+          "startDate": "2023-02-03",
+          "endDate": "2023-12-03",
+          "email": "ABC@gmail.com",
+          "Refrence Number": "03341041181",
+          "Country": "UK",
+          "City": "Birmingham"
+        }
+      ],
+      "Projects": [
+        {
+          "ProjectTitle": "DevConnections",
+          "Company": "XYZ",
+          "startDate": "2023-12-01",
+          "endDate": "2023-12-09",
+          "webLink": "abc.com",
+          "clientName": "Own",
+          "url": "Not Available",
+          "tools": "HTML,Tailwind,React Js,Redux"
+        }
+      ],
+      "Certificates": {
+        "certificateName": "WORDPRESS",
+        "rollNo.": "123",
+        "certificateAuth": "WEB",
+        "certificateURL": "www.web.com",
+        "cerDate": "2023-12-30"
+      },
+      "PreferredJobCity": "Islamabad",
+      "Language": [
+        "Urdu",
+        "English",
+        "Punjabi"
+      ],
+      "Hobbies": [
+        "Coding",
+        "Movies"
+      ],
+      "Refrences": {
+        "refName": "Usman Ghulam",
+        "refCompany": "Abhi",
+        "refEmail": "usman@gmail.com",
+        "contactNo.": "+923044055666"
+      },
+      "Skills": [
+        {
+          "name": "HTML",
+          "percentage": "80"
+        },
+        {
+          "name": "CSS",
+          "percentage": "70"
+        },
+        {
+          "name": "JavaScript",
+          "percentage": "80"
+        }
+      ]
+    },
+    {
+      "Name": "tayyab",
+      "Email": "tayyab@text.com",
+      "Phone": "03064741302",
+      "Password": "1234",
+      "id": 3,
+      "basic": {
+        "firstName": "Tayyb",
+        "last": "qureshi",
+        "dob": "1998-04-11",
+        "degree": "Intermediate",
+        "gender": "Male"
+      },
+      "contact": {
+        "email": "asad@gmail.com",
+        "home_contact": "09876543",
+        "mob": "123456789",
+        "country": "Pakistan",
+        "addressLine1": "asdfghjk",
+        "city": "ISB",
+        "addressLine2": ";kjhfd",
+        "degree": "54000"
+      },
+      "experience": {
+        "jobCity": "Lahore",
+        "expDesignation": "fr6yfgfwif",
+        "experience": "Fresh"
+      }
+    },
+    {
+      "Name": "Umair",
+      "Email": "umairnaeem373@gmail.com",
+      "Phone": "03341041181",
+      "Password": "605615",
+      "id": 4,
+      "basic": {
+        "firstName": "Muhammad",
+        "last": "Umair",
+        "dob": "2023-11-27",
+        "degree": "Inter",
+        "gender": "Male"
+      },
+      "contact": {
+        "email": "umairnaeem373@gmail.com",
+        "home_contact": "098765432",
+        "mob": "123456789",
+        "country": "UK",
+        "addressLine1": "ASDFGHJKL",
+        "city": "ISB",
+        "addressLine2": "lkjhgfd",
+        "degree": "54000"
+      },
+      "experience": {
+        "jobCity": "LHR",
+        "expDesignation": "UNknown",
+        "experience": "Fresh"
+      },
+      "education": {
+        "AwardURL": "",
+        "firstname": "ijhuygtuioyfd",
+        "lastname": "iuyt",
+        "degreeTitle": "BS",
+        "degreeLevel": "Inter",
+        "majors": "CS",
+        "year": "2018",
+        "Institute": "MPS",
+        "location": "Lahore",
+        "percentage": "3.5",
+        "Types": "CGPA"
+      }
+    },
+    {
+      "Name": "Shoaib",
+      "Email": "asad@abc.com",
+      "Phone": "03214147547",
+      "Password": "1234",
+      "id": 5,
+      "basic": {
+        "dob": "2023-11-27",
+        "firstName": "Muhammad",
+        "last": "Shoaib",
+        "degree": "Inter",
+        "gender": "Male"
+      },
+      "contact": {
+        "email": "umairnaeem373@gmail.com",
+        "home_contact": "09876543",
+        "mob": "123456789",
+        "country": "UK",
+        "addressLine1": "Yo BrO",
+        "city": "New Jersey",
+        "addressLine2": "yes",
+        "degree": "54000"
+      },
+      "experience": {
+        "jobCity": "New Jersey",
+        "expDesignation": "Any",
+        "experience": "Fresh"
+      }
+    }
+  ]
+}

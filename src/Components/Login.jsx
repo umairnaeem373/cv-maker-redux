@@ -1,0 +1,137 @@
+import React, { useState, useEffect } from "react";
+import { getAllUsers } from "../Actions/Actions";
+import { useSelector, useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+
+function Login() {
+  const dispatch = useDispatch();
+  let navigate = useNavigate();
+  const { users } = useSelector((st) => st.getAll);
+
+  useEffect(() => {
+    dispatch(getAllUsers());
+  }, [dispatch]);
+
+  const [Inp, setInp] = useState();
+
+  const handleChange = (e) => {
+    setInp({ ...Inp, [e.target.name]: e.target.value });
+  };
+
+  const handleLogin = () => {
+    const currentUser = users.find(
+      (e) => e.Email === Inp.Email && e.Password === Inp.Password
+    );
+    if (currentUser){
+        localStorage.setItem("user", JSON.stringify(currentUser));
+        navigate('/basicinfo')
+    } 
+        
+    else alert("Invalid Email or Password");
+  };
+
+  return (
+    <div className="relative h-[654px]">
+      <div className="justify-between flex">
+        <div>
+          <h1 className="font-extrabold text-[64px] text-[#222222] leading-[76px] tracking-[-1px] max-w-[613px] h-auto  me-0 mt-[103px] ms-[167px]">
+            Find Your <span className="text-[#635EA3]">Blockchain Dev</span> Job
+            Today
+          </h1>
+          <p className="max-w-[519px] text-[22px] leading-[30.01px] tracking-[2%] h-[60px] ms-[177px] mt-[27px]">
+            Discover the leading companies in the blockchain industry and find
+            job opportunities.
+          </p>
+        </div>
+
+        <div className="bg-white w-[432px] h-[598px] me-[60px] my-[28px] rounded-[10px] shadow">
+          <div className="bg-white">
+            <div className="mx-[55px] flex items-center justify-between">
+              <h1 className="mt-[39px] text-center text-neutral-700 text-2xl font-extrabold font-['Nunito Sans'] uppercase leading-none tracking-[3px]">
+                Sign In
+              </h1>
+
+              {/* <div className="w-auto mt-[32px]">
+                <button className="h-[30px] rounded-tl-[5.05px] py-[5px] px-[10px] rounded-bl-[5.05px] font-bold text-[14px] text-white bg-[#635EA3] w-[91px] leading-[19.1px] tracking-tighter">
+                  Job Seeker
+                </button>
+                <button className="border h-[30px] text-[#979696] rounded-br-[5.05px] py-[5px] px-[10px] rounded-tr-[5.05px] leading-[19.1px] tracking-tighter">
+                  Employer
+                </button>
+              </div> */}
+            </div>
+
+            <div className="h-[69px] ms-[55px] mt-[20px] ">
+              <p className="w-[68px] text-neutral-800 text-sm  font-['Nunito Sans'] tracking-tighter">
+                Email
+                <span className="text-rose-500 font-['Lato'] tracking-tighter">
+                  *
+                </span>
+              </p>
+              <input
+                name="Email"
+                onChange={handleChange}
+                placeholder="Enter Email"
+                className="mt-[8px] w-[323px] h-[42px] top-[27px] ps-[16px]  rounded-lg border border-zinc-400 text-neutral-400 text-sm font-normal font-['Nunito Sans'] tracking-tight"
+              ></input>
+            </div>
+
+            <div className="h-[69px] ms-[55px] mt-[20px] ">
+              <p className="w-[68px] text-neutral-800 text-sm  font-['Nunito Sans'] tracking-tighter">
+                Password
+                <span className="text-rose-500 font-['Lato'] tracking-tighter">
+                  *
+                </span>
+              </p>
+              <input
+                name="Password"
+                onChange={handleChange}
+                type="password"
+                placeholder="Enter Password"
+                className="mt-[8px] w-[323px] h-[42px] top-[27px] ps-[16px]  rounded-lg border border-zinc-400 text-neutral-400 text-sm font-normal font-['Nunito Sans'] tracking-tight"
+              ></input>
+            </div>
+
+            <button
+              onClick={handleLogin}
+              className="block mx-auto mt-[32px] text-white text-sm font-bold font-['Nunito Sans'] leading-normal w-[323px] h-[42px] bg-gradient-to-r from-indigo-900 to-violet-500 rounded-[10px]"
+            >
+              Sign In
+            </button>
+
+            <div className="mt-4 mx-auto flex justify-center items-center h-4">
+              <div className="w-[107px] h-[0px] left-[271px] top-[513px]  border border-b-neutral-400"></div>
+              <button className="mx-[14px] text-neutral-400 text-xs font-normal font-['Nunito Sans']">
+                or sign in with
+              </button>
+              <div className="w-[107px] h-[0px] border border-t-neutral-400"></div>
+            </div>
+
+            <div className="w-[133.10px] h-[30.31px] mx-auto mt-[16px] flex justify-between">
+              <div className="w-[59.10px] h-[30.31px] rounded-[5.05px] border border-neutral-400 flex justify-center items-center">
+                <img
+                  className="w-3 h-3 left-[24px] top-[9px] "
+                  src="../Images/search 1.png" alt="Google"
+                />
+              </div>
+              <div className="w-[59.10px] h-[30.31px] rounded-[5.05px] border border-neutral-400 flex justify-center items-center">
+                <img
+                  className="w-3 h-3 left-[24px] top-[9px] "
+                  src="../Images/facebook 3.png" alt="Facebook"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        className="absolute z-[-1] bottom-0 right-0"
+        src="../Images/Group 6294.png"
+        alt="Purple Section"
+      />
+    </div>
+  );
+}
+
+export default Login;

@@ -10,7 +10,7 @@ function MainMenu() {
         <div className="flex gap-[30px]">
           <button
             onClick={() => navigate("/basicinfo")}
-            className="font-bold text-[#635EA3] text-[14px] rounded-[10px] border border-[#635EA3] py-[15px] ps-[30px] pe-[25px]"
+            className="font-bold text-[#635EA3] text-[0.9em] rounded-[10px] border border-[#635EA3] py-4 ps-8 pe-6"
           >
             Create Profile
           </button>

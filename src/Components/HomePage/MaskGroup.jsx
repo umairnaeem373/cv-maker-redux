@@ -14,10 +14,10 @@ function MaskGroup() {
   };
 
   return (
-    <div className="relative h-[654px]">
-      <div className="justify-between flex">
+    <div className="relative h-fit">
+      <div className="grid grid-cols-1 md:grid-cols-2">
         <div>
-        <h1 className="font-extrabold text-[64px] text-[#222222] leading-[76px] tracking-[-1px] max-w-[613px] h-auto mt-[103px] ms-[167px]">
+        <h1 className="font-extrabold text-[64px] text-[rgb(34,34,34)] leading-[76px] tracking-[-1px] max-w-[613px] h-auto mt-[103px] ms-[167px]">
             Find Your <span className="text-[#635EA3]">Blockchain Dev</span> Job
             Today
           </h1>
@@ -32,10 +32,10 @@ function MaskGroup() {
           </button>
         </div>
 
-        <div className="border bg-white w-[432px] h-[598px] me-[60px] my-[28px] rounded-[10px] shadow">
+        <div className="border mx-auto bg-white w-[432px] h-[598px] my-[28px] rounded-[10px] shadow">
           <div className="bg-white">
             <div className="mx-[55px] flex items-center justify-between">
-              <h1 className="mt-[39px] text-center text-neutral-700 text-2xl font-extrabold font-['Nunito Sans'] uppercase leading-none tracking-[3px]">
+              <h1 className="mt-[39px] text-center whitespace-nowrap text-neutral-700 text-2xl font-extrabold font-['Nunito Sans'] uppercase leading-none tracking-[3px]">
                 sign up
               </h1>
               <div className="w-auto mt-[32px]">

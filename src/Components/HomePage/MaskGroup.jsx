@@ -15,30 +15,30 @@ function MaskGroup() {
 
   return (
     <div className="relative h-fit">
-      <div className="grid grid-cols-1 md:grid-cols-2">
-        <div>
-        <h1 className="font-extrabold text-[64px] text-[rgb(34,34,34)] leading-[76px] tracking-[-1px] max-w-[613px] h-auto mt-[103px] ms-[167px]">
+      <div className="grid grid-cols-1 lg:grid-cols-2">
+        <div className="p-10 mx-auto">
+        <h1 className="font-extrabold text-6xl text-[rgb(34,34,34)] leading-[76px] tracking-[-1px] max-w-[613px] h-auto mt-[103px]">
             Find Your <span className="text-[#635EA3]">Blockchain Dev</span> Job
             Today
           </h1>
-          <p className="max-w-[519px] text-[22px] leading-[30.01px] tracking-[2%] h-[60px] ms-[177px] mt-[27px]">
+          <p className="max-w-[519px] text-[22px] leading-[30.01px] tracking-[2%] h-fit mt-[27px]">
             Discover the leading companies in the blockchain industry and find
             job opportunities.
           </p>
           <button
           onClick={()=>navigate('/login')}
-           className="w-[360px] ms-[171px] mt-[30px] h-[54px] px-[95px] py-[15px] text-white font-bold rounded-[10px] bg-gradient-to-r from-[#49478C] to-[#9756FF]">
+           className="max-w-[360px] whitespace-nowrap mt-8 h-[54px] px-[95px] py-[15px] text-white font-bold rounded-[10px] bg-gradient-to-r from-[#49478C] to-[#9756FF]">
             Login Now
           </button>
         </div>
 
-        <div className="border mx-auto bg-white w-[432px] h-[598px] my-[28px] rounded-[10px] shadow">
+        <div className="mx-auto shadow-lg bg-white min-w-fit max-w-[432px] h-[598px] my-[28px] rounded-[10px]">
           <div className="bg-white">
-            <div className="mx-[55px] flex items-center justify-between">
+            <div className="mx-[55px] flex gap-4 items-center justify-between">
               <h1 className="mt-[39px] text-center whitespace-nowrap text-neutral-700 text-2xl font-extrabold font-['Nunito Sans'] uppercase leading-none tracking-[3px]">
                 sign up
               </h1>
-              <div className="w-auto mt-[32px]">
+              <div className="whitespace-nowrap mt-[32px]">
                 <button className="h-[30px] rounded-tl-[5.05px] py-[5px] px-[10px] rounded-bl-[5.05px] font-bold text-[14px] text-white bg-[#635EA3] w-[91px] leading-[19.1px] tracking-tighter">
                   Job Seeker
                 </button>
@@ -48,7 +48,7 @@ function MaskGroup() {
               </div>
             </div>
 
-            <div className="h-[69px] ms-[55px] mt-[17px] ">
+            <div className="h-[69px] ms-[55px] mt-[17px]">
               <p className="w-[68px] text-neutral-800 text-sm  font-['Nunito Sans'] tracking-tighter">
                 Name
                 <span className="text-rose-500 font-['Lato'] tracking-tighter">
@@ -59,7 +59,7 @@ function MaskGroup() {
                 name="Name"
                 onChange={handleChange}
                 placeholder="Enter Name"
-                className="mt-[8px] w-[323px] h-[42px] top-[27px] ps-[16px]  rounded-lg border border-zinc-400 text-neutral-400 text-sm font-normal font-['Nunito Sans'] tracking-tight"
+                className="mt-[8px] min-w-[80%] max-w-[323px] h-[42px] top-[27px] px-[16px]  rounded-lg border border-zinc-400 text-neutral-400 text-sm font-normal font-['Nunito Sans'] tracking-tight"
               ></input>
             </div>
 

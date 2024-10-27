@@ -15,7 +15,7 @@ function MaskGroup() {
 
   return (
     <div className="relative h-fit">
-      <div className="grid grid-cols-1 lg:grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="p-10 mx-auto">
         <h1 className="font-extrabold text-6xl text-[rgb(34,34,34)] leading-[76px] tracking-[-1px] max-w-[613px] h-auto mt-[103px]">
             Find Your <span className="text-[#635EA3]">Blockchain Dev</span> Job
@@ -32,20 +32,20 @@ function MaskGroup() {
           </button>
         </div>
 
-        <div className="mx-auto shadow-lg bg-white min-w-fit max-w-[432px] h-[598px] my-[28px] rounded-[10px]">
+        <div className="mx-auto justify-self-center md:justify-self-stretch md:mx-8 shadow-lg bg-white min-w-[325px] max-w-[432px] h-[598px] my-[28px] rounded-[10px]">
           <div className="bg-white">
             <div className="mx-[55px] flex gap-4 items-center justify-between">
               <h1 className="mt-[39px] text-center whitespace-nowrap text-neutral-700 text-2xl font-extrabold font-['Nunito Sans'] uppercase leading-none tracking-[3px]">
                 sign up
               </h1>
-              <div className="whitespace-nowrap mt-[32px]">
+              {/* <div className="whitespace-nowrap mt-[32px]">
                 <button className="h-[30px] rounded-tl-[5.05px] py-[5px] px-[10px] rounded-bl-[5.05px] font-bold text-[14px] text-white bg-[#635EA3] w-[91px] leading-[19.1px] tracking-tighter">
                   Job Seeker
                 </button>
                 <button className="border h-[30px] text-[#979696] rounded-br-[5.05px] py-[5px] px-[10px] rounded-tr-[5.05px] leading-[19.1px] tracking-tighter">
                   Employer
                 </button>
-              </div>
+              </div> */}
             </div>
 
             <div className="h-[69px] ms-[55px] mt-[17px]">
@@ -74,7 +74,7 @@ function MaskGroup() {
                 name="Email"
                 onChange={handleChange}
                 placeholder="Enter Email"
-                className="mt-[8px] w-[323px] h-[42px] top-[27px] ps-[16px]  rounded-lg border border-zinc-400 text-neutral-400 text-sm font-normal font-['Nunito Sans'] tracking-tight"
+                className="mt-[8px] min-w-[80%] max-w-[323px] h-[42px] top-[27px] ps-[16px]  rounded-lg border border-zinc-400 text-neutral-400 text-sm font-normal font-['Nunito Sans'] tracking-tight"
               ></input>
             </div>
 
@@ -90,7 +90,7 @@ function MaskGroup() {
                 onChange={handleChange}
                 type="number"
                 placeholder="Enter phone no"
-                className="mt-[8px] w-[323px] h-[42px] top-[27px] ps-[16px]  rounded-lg border border-zinc-400 text-neutral-400 text-sm font-normal font-['Nunito Sans'] tracking-tight"
+                className="mt-[8px] min-w-[80%] max-w-[323px] h-[42px] top-[27px] ps-[16px]  rounded-lg border border-zinc-400 text-neutral-400 text-sm font-normal font-['Nunito Sans'] tracking-tight"
               ></input>
             </div>
 
@@ -106,13 +106,13 @@ function MaskGroup() {
                 onChange={handleChange}
                 type="password"
                 placeholder="Enter Password"
-                className="mt-[8px] w-[323px] h-[42px] top-[27px] ps-[16px]  rounded-lg border border-zinc-400 text-neutral-400 text-sm font-normal font-['Nunito Sans'] tracking-tight"
+                className="mt-[8px] min-w-[80%] max-w-[323px] h-[42px] top-[27px] ps-[16px]  rounded-lg border border-zinc-400 text-neutral-400 text-sm font-normal font-['Nunito Sans'] tracking-tight"
               ></input>
             </div>
 
             <button
               onClick={() => dispatch(newUser(Inp))}
-              className="block mx-auto mt-[32px] text-white text-sm font-bold font-['Nunito Sans'] leading-normal w-[323px] h-[42px] bg-gradient-to-r from-indigo-900 to-violet-500 rounded-[10px]"
+              className="block mx-auto mt-[32px] text-white text-sm font-bold font-['Nunito Sans'] leading-normal min-w-[80%] max-w-[323px] h-[42px] bg-gradient-to-r from-indigo-900 to-violet-500 rounded-[10px]"
             >
               Register Now
             </button>

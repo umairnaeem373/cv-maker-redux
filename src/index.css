@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.circle-job{
+  background-image: url(../public/Images/Group\ 237838.png);
+  background-size: contain;
+  background-position: right;
+}

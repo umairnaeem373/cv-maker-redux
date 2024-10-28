@@ -2,7 +2,7 @@ import React from "react";
 
 function Employers() {
   return (
-    <div className="mt-[117px] w-full h-[556px]">
+    <div className="mt-[117px] border border-green-500 w-full h-[556px]">
       <div className="relative">
         <img className="absolute" src="../Images/Group 237845.png" alt="" />
         <img

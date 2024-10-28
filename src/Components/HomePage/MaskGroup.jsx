@@ -32,7 +32,7 @@ function MaskGroup() {
           </button>
         </div>
 
-        <div className="mx-auto justify-self-center md:justify-self-stretch md:mx-8 shadow-lg bg-white min-w-[325px] max-w-[432px] h-[598px] my-[28px] rounded-[10px]">
+        <div className="mx-auto justify-self-center md:justify-self-stretch md:mx-8 shadow-lg bg-white min-w-[320px] max-w-[432px] h-[598px] my-[28px] rounded-[10px]">
           <div className="bg-white">
             <div className="mx-[55px] flex gap-4 items-center justify-between">
               <h1 className="mt-[39px] text-center whitespace-nowrap text-neutral-700 text-2xl font-extrabold font-['Nunito Sans'] uppercase leading-none tracking-[3px]">

@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="px-[65px] pt-[61px] pb-[18px]">
+    <div className="border px-[65px] pt-[61px] pb-[18px]">
       <div className="flex flex-col">
-        <div className="flex gap-[144px] justify-between">
+        <div className="grid grid-cols-5">
           <div className="flex flex-col gap-[10px] pt-[32px]">
             <h2 className="text-[16px] text-[#373737] leading-[28px] font-normal">
               Services

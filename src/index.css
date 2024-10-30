@@ -17,3 +17,9 @@ code {
   background-size: contain;
   background-position: right;
 }
+
+.circle-employer{
+  background-image: url(../public/Images/Group\ 237845.png);
+  background-size: contain;
+  background-position: right;
+}

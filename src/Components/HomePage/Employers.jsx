@@ -2,18 +2,10 @@ import React from "react";
 
 function Employers() {
   return (
-    <div className="mt-[117px] border border-green-500 w-full h-[556px]">
-      <div className="relative">
-        <img className="absolute" src="../Images/Group 237845.png" alt="" />
-        <img
-          className="absolute right-[53px]"
-          src="../Images/Frame1.png"
-          alt=""
-        />
-      </div>
+    <div className="mt-[117px] px-12 h-fit border grid gap-12 grid-cols-1 items-center md:grid-cols-2 border-green-500 w-full">
+  
 
-      <div className="w-[417px] h-[326px] ms-[293px]">
-        
+      <div className="border h-fit border-red-600 circle-employer">
           <div className=" mt-[104px] w-[220px]">
             <h1 className=" text-neutral-700 text-4xl font-bold font-['Nunito Sans'] leading-normal">
               Employers
@@ -41,6 +33,14 @@ function Employers() {
             </p>
           </div>
 
+      </div>
+
+      <div className="order-none md:order-1">
+        {/* <img className="absolute" src="../Images/Group 237845.png" alt="" /> */}
+        <img
+          src="../Images/Frame1.png"
+          alt=""
+        />
       </div>
     </div>
   );
